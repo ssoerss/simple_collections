@@ -5,7 +5,7 @@ namespace Soers\SimpleCollection;
 
 use Countable;
 
-interface SimpleCollection extends Countable, \IteratorAggregate, \ArrayAccess
+interface SimpleCollection extends Countable, \IteratorAggregate
 {
 
     /**
@@ -44,7 +44,7 @@ interface SimpleCollection extends Countable, \IteratorAggregate, \ArrayAccess
     
     public function unique(): SimpleCollection;
 
-    public function merge(SimpleCollection... $collections): SimpleCollection;
+    public function merge(SimpleCollection $collections): SimpleCollection;
     
     public function count(): int;
     
