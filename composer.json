@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-0": { "": "./src/" },
+        "psr-4": { "Soers\\": "./src/Soers/" }
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    }
+}
